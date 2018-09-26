@@ -134,6 +134,7 @@
                     <navigationItem key="navigationItem" id="A7R-si-ifx"/>
                     <connections>
                         <outlet property="advanceButton" destination="59J-jC-DOu" id="rLH-K0-rjp"/>
+                        <outlet property="attempts" destination="sJg-Tz-C0f" id="CuV-H5-X0c"/>
                         <outlet property="chooseNumber" destination="qSl-AS-1mi" id="MF3-G0-7bS"/>
                         <outlet property="chooseQuestion" destination="vt8-ic-WEo" id="v8e-vE-AEl"/>
                         <outlet property="darkMode" destination="97k-9n-fgi" id="F3H-jn-si3"/>
@@ -156,6 +157,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Guess Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-0X-qn1">
                                 <rect key="frame" x="122" y="297" width="131" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="7qk-WR-PfE"/>
                                     <constraint firstAttribute="height" constant="30" id="suF-zC-Uhm"/>

@@ -71,7 +71,7 @@ class welcomeScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             playAttempts = 10
         } else if attempts.selectedSegmentIndex == 2 {
             playAttempts = 15
-        } else {
+        } else if attempts.selectedSegmentIndex == 3 {
             playAttempts = 20
         }
     }
