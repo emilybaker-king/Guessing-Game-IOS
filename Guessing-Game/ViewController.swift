@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
+    
+    
     @IBOutlet weak var attemptsLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var greetingLabel: UILabel!
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.hideKeyboardWhenTappedAround()
         attempts = attemptsMax
         randomNumber = (Int(arc4random_uniform(UInt32(maxNumber)))+1)
         greetingLabel.text = "Pick a number between 1-\(maxNumber!)"
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.black
         }
     }
-
+    
     @IBAction func resetClick(_ sender: Any) {
         greetingLabel.text = "Pick a number between 1-\(maxNumber!)"
         attempts = attemptsMax
@@ -85,7 +86,18 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-
 }
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+
+
 
