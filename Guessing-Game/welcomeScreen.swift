@@ -16,6 +16,8 @@ class welcomeScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var advanceButton: UIButton!
     @IBOutlet weak var triesLabel: UILabel!
     @IBOutlet weak var attempts: UISegmentedControl!
+    @IBOutlet weak var darkMode: UILabel!
+    @IBOutlet weak var onOff: UISwitch!
     
     var pickerData: [Int] = [Int]()
     
@@ -33,10 +35,20 @@ class welcomeScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         welcome.text = "Welcome to the Guessing Game!"
         chooseQuestion.text = "Please choose the number you want for your max value in your range in the game:"
         triesLabel.text = "Choose how many tries you want to have to guess the number:"
+        darkMode.text = "Dark mode"
     
         
         pickerData = Array(1...100).map { $0 * 10 }
         
+    }
+    
+    @IBAction func switchColor(_ sender: Any) {
+        
+        if onOff.isOn {
+            self.view.backgroundColor = UIColor.white
+        } else {
+            self.view.backgroundColor = UIColor.black
+        }
     }
     
     
@@ -75,6 +87,8 @@ class welcomeScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             destination.maxNumber = number
             
             destination.attemptsMax = playAttempts
+            
+            destination.darkModeOn = onOff.isOn
         }
         
     }

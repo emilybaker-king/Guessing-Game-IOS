@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var attempts = 5
     var maxNumber: Int!
     var attemptsMax: Int!
+    var darkModeOn: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,12 @@ class ViewController: UIViewController {
         greetingLabel.text = "Pick a number between 1-\(maxNumber!)"
         attemptsLabel.text = "You have \(attempts) tries"
         guessStatusLabel.text = ""
+        
+        if darkModeOn {
+            self.view.backgroundColor = UIColor.white
+        } else {
+            self.view.backgroundColor = UIColor.black
+        }
     }
 
     @IBAction func resetClick(_ sender: Any) {
