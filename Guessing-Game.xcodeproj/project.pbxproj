@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7229701215D1FE2004CE8A1 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7229700215D1FE2004CE8A1 /* gif.swift */; };
+		B7229703215D2350004CE8A1 /* squidward.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7229702215D2350004CE8A1 /* squidward.gif */; };
+		B7229705215D34FD004CE8A1 /* youLost.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7229704215D34FD004CE8A1 /* youLost.gif */; };
 		B78C8E492155487400F2AF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C8E482155487400F2AF9E /* AppDelegate.swift */; };
 		B78C8E4B2155487400F2AF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C8E4A2155487400F2AF9E /* ViewController.swift */; };
 		B78C8E4E2155487400F2AF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78C8E4C2155487400F2AF9E /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7229700215D1FE2004CE8A1 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
+		B7229702215D2350004CE8A1 /* squidward.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = squidward.gif; path = ../../../../other/squidward.gif; sourceTree = "<group>"; };
+		B7229704215D34FD004CE8A1 /* youLost.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = youLost.gif; path = ../../../../other/youLost.gif; sourceTree = "<group>"; };
 		B78C8E452155487400F2AF9E /* Guessing-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guessing-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C8E482155487400F2AF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78C8E4A2155487400F2AF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,10 +65,13 @@
 				B78C8E482155487400F2AF9E /* AppDelegate.swift */,
 				B78C8E4A2155487400F2AF9E /* ViewController.swift */,
 				B78C8E4C2155487400F2AF9E /* Main.storyboard */,
+				B7229702215D2350004CE8A1 /* squidward.gif */,
+				B7229704215D34FD004CE8A1 /* youLost.gif */,
 				B78C8E4F2155487500F2AF9E /* Assets.xcassets */,
 				B78C8E512155487500F2AF9E /* LaunchScreen.storyboard */,
 				B78C8E542155487500F2AF9E /* Info.plist */,
 				B7925AA4215AB4EA00D71AFE /* welcomeScreen.swift */,
+				B7229700215D1FE2004CE8A1 /* gif.swift */,
 			);
 			path = "Guessing-Game";
 			sourceTree = "<group>";
@@ -126,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78C8E532155487500F2AF9E /* LaunchScreen.storyboard in Resources */,
+				B7229705215D34FD004CE8A1 /* youLost.gif in Resources */,
+				B7229703215D2350004CE8A1 /* squidward.gif in Resources */,
 				B78C8E502155487500F2AF9E /* Assets.xcassets in Resources */,
 				B78C8E4E2155487400F2AF9E /* Main.storyboard in Resources */,
 			);
@@ -140,6 +151,7 @@
 			files = (
 				B78C8E4B2155487400F2AF9E /* ViewController.swift in Sources */,
 				B78C8E492155487400F2AF9E /* AppDelegate.swift in Sources */,
+				B7229701215D1FE2004CE8A1 /* gif.swift in Sources */,
 				B7925AA5215AB4EA00D71AFE /* welcomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

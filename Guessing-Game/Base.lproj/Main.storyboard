@@ -75,24 +75,6 @@
                                     <action selector="attemptsSelector:" destination="jU8-3X-6Kb" eventType="valueChanged" id="Riu-9K-K74"/>
                                 </connections>
                             </segmentedControl>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSl-AS-1mi">
-                                <rect key="frame" x="16" y="276" width="343" height="136"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="1Cn-FU-xlh"/>
-                                    <constraint firstAttribute="height" constant="136" id="TLQ-UK-doQ"/>
-                                </constraints>
-                            </pickerView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJh-c1-1bO">
-                                <rect key="frame" x="53" y="587" width="49" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="enK-E3-ltB"/>
-                                    <constraint firstAttribute="width" constant="47" id="sRP-dX-6Xv"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="switchColor:" destination="jU8-3X-6Kb" eventType="valueChanged" id="aNi-rV-7Rv"/>
-                                </connections>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97k-9n-fgi">
                                 <rect key="frame" x="27" y="533" width="178" height="46"/>
                                 <constraints>
@@ -103,6 +85,24 @@
                                 <color key="textColor" red="0.73075210492279785" green="0.43539584595292136" blue="0.12601686795339634" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJh-c1-1bO">
+                                <rect key="frame" x="53" y="587" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="enK-E3-ltB"/>
+                                    <constraint firstAttribute="width" constant="47" id="sRP-dX-6Xv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchColor:" destination="jU8-3X-6Kb" eventType="valueChanged" id="aNi-rV-7Rv"/>
+                                </connections>
+                            </switch>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSl-AS-1mi">
+                                <rect key="frame" x="16" y="276" width="343" height="136"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="1Cn-FU-xlh"/>
+                                    <constraint firstAttribute="height" constant="136" id="TLQ-UK-doQ"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -220,6 +220,20 @@
                                     <action selector="submitClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDQ-tA-aYj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squidward.gif" translatesAutoresizingMaskIntoConstraints="NO" id="rYr-cl-FmE">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="LW4-d3-NtM"/>
+                                    <constraint firstAttribute="width" constant="240" id="dQw-zB-2l7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youLost.gif" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-U1-tsz">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JYR-lG-GDm"/>
+                                    <constraint firstAttribute="height" constant="240" id="cdv-dD-Ju2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -231,8 +245,12 @@
                             <constraint firstItem="GZE-8O-mVC" firstAttribute="top" secondItem="OTs-4m-40x" secondAttribute="bottom" constant="69" id="N7B-uA-wZm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OTs-4m-40x" secondAttribute="trailing" constant="16" id="Puk-Qu-Ymq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GZE-8O-mVC" secondAttribute="trailing" constant="54" id="Qeq-x5-rDj"/>
+                            <constraint firstItem="e6x-U1-tsz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tgl-Bf-buD"/>
+                            <constraint firstItem="e6x-U1-tsz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V1u-ab-1Hh"/>
                             <constraint firstItem="a5v-9g-9dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="WGp-Ab-cBj"/>
+                            <constraint firstItem="rYr-cl-FmE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WdX-nz-O3R"/>
                             <constraint firstItem="uhO-Ko-qU2" firstAttribute="top" secondItem="FOY-0X-qn1" secondAttribute="bottom" constant="39" id="Why-Et-gHx"/>
+                            <constraint firstItem="rYr-cl-FmE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zrl-ah-VPM"/>
                             <constraint firstItem="uhO-Ko-qU2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jTq-7I-Ocy"/>
                             <constraint firstItem="zNn-ND-Pk8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="poG-yf-y4Q"/>
                             <constraint firstItem="zNn-ND-Pk8" firstAttribute="top" secondItem="uhO-Ko-qU2" secondAttribute="bottom" constant="8" id="vBL-gl-uhR"/>
@@ -243,9 +261,11 @@
                     </view>
                     <connections>
                         <outlet property="attemptsLabel" destination="OTs-4m-40x" id="KNu-of-A2l"/>
+                        <outlet property="beautifulSquidward" destination="e6x-U1-tsz" id="AZE-bB-bMn"/>
                         <outlet property="greetingLabel" destination="GZE-8O-mVC" id="d6U-zM-20F"/>
                         <outlet property="guessStatusLabel" destination="uhO-Ko-qU2" id="de3-3L-uLv"/>
                         <outlet property="resetButton" destination="a5v-9g-9dz" id="E4B-ab-r1U"/>
+                        <outlet property="squidwardGif" destination="rYr-cl-FmE" id="f1j-LD-Apc"/>
                         <outlet property="submitButton" destination="zNn-ND-Pk8" id="yAk-Pq-xpg"/>
                         <outlet property="textField" destination="FOY-0X-qn1" id="mGQ-7C-Uz8"/>
                     </connections>
@@ -273,4 +293,8 @@
             <point key="canvasLocation" x="-639.20000000000005" y="131.78410794602701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="squidward.gif" width="500" height="500"/>
+        <image name="youLost.gif" width="250" height="186"/>
+    </resources>
 </document>
